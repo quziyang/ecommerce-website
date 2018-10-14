@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>首页-产品详情页</title>
+		<meta charset='utf-8' />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="css/commons.css" />
+		<link rel="stylesheet" type="text/css" href="css/widget.css" />
+		<link rel="stylesheet" type="text/css" href="css/page/product.css" />
+	</head>
+	<body>
+		<br/><br/><br/>
+		<div class="productWrap cle">
+			<!-- leftWrap -->
+			<div class="productLeft">
+				<div class="productBigImg" id="productBigImgId">
+					<div class="productMask" id="productMaskId" style="display: none"></div>
+					<div id="imgLoading">图片正在加载中ing...</div>
+					<!-- 中等大小的图片 -->
+					<img id="mediumImgId" />
+					<!-- 产品详情页-大图局部显示 -->
+					<div class="localBigImg" id="localBigImgWrapId">
+						<!-- <img id="localBigImgId" /> -->
+					</div>
+					<i></i>
+				</div>
+				<!-- <div id="yellowBlock" style="font-size: 33px"></div> -->
+				<!-- 产品小图的列表 -->
+				<div class="smallImgList">
+					<label id="leftBtnId"></label>
+					<ul id="smallImgUlId"></ul>
+					<span id="rightBtnId"></span>
+				</div>
+			</div>
+
+			<!-- rightWrap -->
+			<div class="productRight">
+				<div class="productTitle cle" id="productTitleId">
+				</div>
+				<!-- 配送地址 start -->
+				<div class="sendAddress cle">
+					<p class="sendAddressP">配送地址</p>
+					<div class="addressWrap">
+						<ul class="addressTitleBtn" id="addressTitleBtnId">请选择配送地址</ul>
+						<div class="addressMenu" id="addressMenuId" style="display: none">
+							<ul class="tabBtnUl cle">
+								<li id="tabA" class="yellow">请选择省</li>
+								<li id="tabB" style="display: none">请选择市</li>
+								<li id="tabC" style="display: none">请选择区</li>
+							</ul>
+							<div class="provinceWrap cle">
+								<ul id="provinceId"></ul>
+							</div>
+							<div class="cityWrap cle">
+								<ul id="cityId" style="display: none"></ul>
+							</div>
+							<div class="areaWrap cle">
+								<ul id="areaId" style="display: none"></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 配送地址 end -->
+
+				<div class="gotoPay">
+					<div class="gotoPayBtn">
+						<input class="btn_a" id="g_btn_a" type="text" value=1 />
+						<input class="btn_b" id="g_btn_b" type="button" value="+" />
+						<input class="btn_c" id="g_btn_c" type="button" value="-" />
+					</div>
+					<input class="gotoShopCarBtn" id="g_btn_d" type="button" value="加入购物车" />
+				</div>
+			</div>
+		</div>
+
+		<br/><br/><br/><br/><br/>
+	</body>
+</html>
+
+<!-- 最先加载jq -->
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- 全站的配置文件 -->
+<script type="text/javascript" src="js/config.js"></script>
+<!-- 具体的业务逻辑代码 -->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/page/product_info.js"></script>
+<script type="text/javascript" src="js/page/goods_info.js"></script>
+<script type="text/javascript" src="js/page/address_info.js"></script>
+<script type="text/javascript" src="js/page/goods_num.js"></script>
+<script type="text/javascript" src="js/productMain.js"></script>
